@@ -13,7 +13,7 @@ function App() {
 
   const buscar = async (ciudad) => {
 
-    let ciudadBuscada = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=891650fae4d1a4a4129b508d76ba13a1&units=metric`);
+    let ciudadBuscada = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=891650fae4d1a4a4129b508d76ba13a1&units=metric`);
     ciudades.find(c => c.id === ciudadBuscada.data.id)
     ? alert('Ya se busco la ciudad')
     : setCiudades([...ciudades, ciudadBuscada.data]); 

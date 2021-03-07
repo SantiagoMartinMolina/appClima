@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Components/NavBar/Navbar';
+import Home from './Containers/Home/Home';
+import axios from 'axios';
+import { useState } from 'react';
+import { Route } from 'react-router-dom';
+import About from './Containers/About/About';
 
 function App() {
+
+  const [ciudades, setCiudades] = useState([]);
+
+  const buscar = async (ciudad) => {
+
+    let ciudadBuscada = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=891650fae4d1a4a4129b508d76ba13a1&units=metric`);
+    ciudades.find(c => c.id === ciudadBuscada.data.id)
+    ? alert('Ya se busco la ciudad')
+    : setCiudades([...ciudades, ciudadBuscada.data]); 
+    
+  }
+
+  const eliminar = (id) => {
+    let filtradas = ciudades.filter(c => c.id !== id);
+    setCiudades(filtradas);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Navbar buscar={buscar}/>
+        <Route exact path='/' render={() => <Home ciudades={ciudades} eliminar={eliminar}/>}/>
+        <Route path='/about' component={About}/>
+      </div>    
   );
 }
 

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: transparent ;
+  /* backdrop-filter: blur(1.5px); */
+  min-height: 100vh;
 }
 
 .App-logo {

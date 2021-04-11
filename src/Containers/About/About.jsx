@@ -25,10 +25,10 @@ export default function About() {
                 <div>
                     <h4>Mis redes son:</h4>
                     <p>
-                        <i class="fab fa-github"></i> <a href="https://github.com/SantiagoMartinMolina" target="_blank">Github</a>
+                        <i class="fab fa-github"></i> <a href="https://github.com/SantiagoMartinMolina" target="_blank" rel="noreferrer">Github</a>
                     </p>
                     <p>
-                        <i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/santiago-molina-dev/" target="_blank">Linkedin</a>
+                        <i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/santiago-molina-dev/" target="_blank" rel="noreferrer">Linkedin</a>
                     </p>
                 </div>
             </div>

@@ -58,7 +58,21 @@ export const StyledNavbar = styled.nav`
             transform: scaleX(1);
         }
     }
+    .links{
+        a:first-child{
+            margin-right: 20px;
+        }
+    }
 
+    @media screen and (max-width: 1200px){
+        .nav-container{
+
+        }   
+        .links{
+
+        }   
+          
+    }
 
 
 

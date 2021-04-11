@@ -13,9 +13,14 @@ export default function Navbar({ buscar }) {
                         {`Santiago Molina - Weather App`}
                     </h1>
                 </Link>
-                <Link to='/About'>
-                    Sobre mí
-                </Link>
+                <div className='links' >
+                    <Link to='/About'>
+                        Informacion
+                    </Link>
+                    <Link to='/Creditos'>
+                        Créditos
+                    </Link>
+                </div>
                 <Search buscar ={buscar}/>
             </div>
         </StyledNavbar>

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledSearch = styled.form`
+
+    
     
     display: flex;
     align-items: center;        
@@ -66,5 +68,15 @@ export const StyledSearch = styled.form`
         transform: scale(1);
         }
     }
-    
+
+    .btn:active{
+        transform: scale(0.95)
+    }
+
+    @media screen and (max-width: 1200px){
+        input, button{
+            padding: 5px 10px;
+        }
+        
+    }
 `

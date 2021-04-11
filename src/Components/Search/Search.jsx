@@ -20,7 +20,7 @@ export default function Search({ buscar }) {
             <div className='input-container'>
                 <input onChange={handleChange} type="text" value={input} />
             </div>
-            <button type='submit'>Buscar</button>
+            <button className='btn' type='submit'>Buscar</button>
         </StyledSearch>
     )
 }

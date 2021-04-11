@@ -41,9 +41,9 @@ export const StyledCard = styled.div`
     }    
 
     .info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+         display: flex;
+        justify-content: space-between; 
+        align-items: center;  
         width: 100%;
     }
 

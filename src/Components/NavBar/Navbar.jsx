@@ -3,8 +3,8 @@ import { StyledNavbar } from './StyledNavbar';
 import { Link } from 'react-router-dom';
 import Search from '../Search/Search';
 
-export default function Navbar({ buscar }) {
-    
+export default function Navbar({ buscar, setToggled }) {
+
     return (
         <StyledNavbar>
             <div className='nav-container'>
@@ -21,7 +21,7 @@ export default function Navbar({ buscar }) {
                         Créditos
                     </Link>
                 </div>
-                <Search buscar ={buscar}/>
+                <Search buscar={buscar} />
             </div>
         </StyledNavbar>
     )

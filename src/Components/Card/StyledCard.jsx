@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import { motion } from "framer-motion"
 
-export const StyledCard = styled.div`
+
+
+export const StyledCard = styled(motion.div)`
     background-color: rgba(51, 118, 172, 0.363);
     /* background-color: rgba(0, 0, 0, 0.5); */
     margin: 20px;

@@ -4,8 +4,11 @@ import { motion } from "framer-motion"
 
 
 export const StyledCard = styled(motion.div)`
-    background-color: rgba(51, 118, 172, 0.363);
+    /* background-color: rgba(51, 118, 172, 0.363); */
     /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(156, 220, 170, 0.4);
+    /* background-color: rgba(182, 238, 194, 0.4); */
+
     margin: 20px;
     padding: 15px 25px;
     width: 300px;
@@ -18,10 +21,12 @@ export const StyledCard = styled(motion.div)`
     border-radius: 10px;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 20px #00000080;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     position: relative;
     word-wrap: break-word;
+    cursor: pointer;
     /* transition: all 3s ease; */
+
     
     h1{
         font-size: 22px; 
@@ -29,17 +34,18 @@ export const StyledCard = styled(motion.div)`
     }
 
     button{
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        padding: 5px 10px;
+        padding: 0;
+        outline: none;
         border: 0;
-        border-radius: 5px;
+        background-color: transparent;
+        font-size: 25px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
         color: white;
-        background-color: #943939;
-
-        &:hover{
-            background-color: #b95555;
+        &:active{
+            transform: scale(0.8)
         }
     }    
 

@@ -15,7 +15,7 @@ export default function Navbar({ buscar, setToggled }) {
                 </Link>
                 <div className='links' >
                     <Link to='/About'>
-                        Informacion
+                        Información
                     </Link>
                     <Link to='/Creditos'>
                         Créditos

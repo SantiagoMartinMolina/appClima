@@ -6,6 +6,7 @@ export const StyledSearch = styled.form`
     
     display: flex;
     align-items: center;        
+    justify-content: center;
 
     .input-container{
         position: relative;
@@ -73,16 +74,16 @@ export const StyledSearch = styled.form`
     .btn:active{
         transform: scale(0.95)
     }
+    @media screen and (max-width: 345px){
+        
+        flex-direction: column;
+    }
 
     @media screen and (max-width: 1200px){
         input, button{
             padding: 5px 10px;
         }
-        
-    }
-    @media screen and (max-width: 1200px){
         input{
-            padding: 5px 10px;
             width: 240px;
         }
     }

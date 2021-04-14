@@ -12,6 +12,7 @@ export const StyledHome = styled.div`
         margin: auto;
         padding: 25px 35px;
         max-width: 700px;
+        width: 90%;
         color: white;
         display: flex;
         flex-direction: column;
@@ -22,6 +23,7 @@ export const StyledHome = styled.div`
         position: absolute;
         top: 0;
         text-align: left;
+        
         h1{
             text-align: center;
         }

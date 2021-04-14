@@ -5,7 +5,7 @@ export const StyledAbout = styled(motion.div)`
     /* background-color: rgba(51, 118, 172, 0.363); */
     /* background-color: rgba(156, 220, 170, 0.4); */
     margin: auto;
-    padding: 25px 35px;
+    padding: 20px;
     max-width: 700px;
     color: white;
     display: flex;
@@ -14,6 +14,9 @@ export const StyledAbout = styled(motion.div)`
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 20px #00000060;
     border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 90%;
+    margin-bottom: 40px;
+
 
     .redes{
         width: 100%;
@@ -74,6 +77,16 @@ export const StyledAbout = styled(motion.div)`
     }
 
     @media screen and (max-width: 480px){
-        width: 90%;
+
+        .tech-cont i{
+            margin: 0;
+        }
+        /* .mg-r{
+            margin: 0;
+        }
+        .mg-r i{
+            display: block;
+        } */
+
     }
 `

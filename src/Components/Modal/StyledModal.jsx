@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export const StyledModalNotFound = styled(motion.div)`
     background-color: #c0ddc6;
-    width: 400px;
+    max-width: 400px;
     min-height: 250px;
     border-radius: 10px;
     position: relative;
@@ -11,6 +11,7 @@ export const StyledModalNotFound = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
 
     .fa-exclamation-circle{
         font-size: 50px;
@@ -38,7 +39,7 @@ export const StyledModalNotFound = styled(motion.div)`
 
 export const StyledModalRepeated = styled(motion.div)`
     background-color: #c0ddc6;
-    width: 400px;
+    max-width: 400px;
     min-height: 250px;
     border-radius: 10px;
     position: relative;
@@ -46,6 +47,8 @@ export const StyledModalRepeated = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+
     .fa-exclamation-triangle{
         font-size: 50px;
         margin-bottom: 10px;
@@ -67,15 +70,20 @@ export const StyledModalRepeated = styled(motion.div)`
             transform: scale(0.9)
         }
     }
+
+    @media screen and (max-width: 480px){
+        width: 90%;
+    }
 `
 
 export const StyledModalDetail = styled(motion.div)`
     /* border: 1px solid white; */
     background-color: #c0ddc6;
-    width: 400px;
+    max-width: 400px;
     min-height: 250px;
     border-radius: 10px;
     position: relative;
+    width: 90%;
     
     .info-container{
         padding: 20px 30px;

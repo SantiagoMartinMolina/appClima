@@ -89,15 +89,17 @@ export const StyledNavbar = styled.nav`
           
     } */
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         .nav-container{
             width: 90%;
             flex-direction: column;
             h1{
-                margin-bottom: 10px;
+                font-size: 20px;
+                /* margin-bottom: 20px; */
             }
             .links{
-                margin-bottom: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         } 
     }

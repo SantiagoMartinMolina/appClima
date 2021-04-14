@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyledHome } from './StyledHome';
 import Card from '../../Components/Card/Card';
 // import { Zoom } from 'react-reveal';
 import { AnimatePresence, motion } from "framer-motion"
-import Modal from '../../Components/Modal/Modal';
 
 
 export default function Home({ ciudades, eliminar, setToggled, isToggled, setCity }) {
@@ -20,7 +19,7 @@ export default function Home({ ciudades, eliminar, setToggled, isToggled, setCit
                     >
                         <h1>Bienvenido</h1>
                         <p>
-                            Utiliza esta app para buscar una ciudad y obtener sus datos meteorológicos
+                            Utiliza esta app para buscar una ciudad y ver sus datos meteorológicos. Luego de buscar, podés hacer click en la tarjeta para ver mas información!
                         </p>
 
                     </motion.div>

@@ -33,7 +33,7 @@ export const StyledAbout = styled(motion.div)`
 
     .links-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;  
         margin-top: 20px;
     }
@@ -55,7 +55,7 @@ export const StyledAbout = styled(motion.div)`
         .tech-cont{
             margin-top: 20px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
 
             p{
                 margin-top: 10px;
@@ -67,6 +67,10 @@ export const StyledAbout = styled(motion.div)`
     .fab{
         font-size: 30px;
         margin-right: 10px;
+    }
+
+    .mg-r{
+        margin-right: 60px;
     }
 
     @media screen and (max-width: 480px){

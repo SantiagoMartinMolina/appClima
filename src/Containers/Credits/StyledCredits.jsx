@@ -17,5 +17,13 @@ export const StyledCredits = styled(motion.div)`
         color: white;
     }
 
+    div p{
+        text-align: left;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 90%;
+    }
+
 `
 

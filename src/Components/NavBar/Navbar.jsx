@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledNavbar } from './StyledNavbar';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Search from '../Search/Search';
 
 export default function Navbar({ buscar, setToggled }) {
@@ -8,18 +8,18 @@ export default function Navbar({ buscar, setToggled }) {
     return (
         <StyledNavbar>
             <div className='nav-container'>
-                <Link to='/'>
+                <NavLink exact to='/'>
                     <h1>
                         {`Santiago Molina - Weather App`}
                     </h1>
-                </Link>
+                </NavLink>
                 <div className='links' >
-                    <Link to='/About'>
+                    <NavLink to='/About'>
                         Información
-                    </Link>
-                    <Link to='/Creditos'>
+                    </NavLink>
+                    <NavLink to='/Creditos'>
                         Créditos
-                    </Link>
+                    </NavLink>
                 </div>
                 <Search buscar={buscar} />
             </div>

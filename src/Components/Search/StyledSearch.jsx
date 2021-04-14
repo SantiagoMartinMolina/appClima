@@ -30,6 +30,7 @@ export const StyledSearch = styled.form`
 
     input{
         /* margin: 15px 0; */
+        width: 270px;
         border-radius: 10px;
         outline: none;
         background-color: transparent;
@@ -39,7 +40,7 @@ export const StyledSearch = styled.form`
         font-family: inherit;
     }
     button{
-        margin: 0 20px;
+        margin-left: 20px;
         border-radius: 10px;
         border: 2px solid white;
         padding: 10px 20px;
@@ -78,5 +79,11 @@ export const StyledSearch = styled.form`
             padding: 5px 10px;
         }
         
+    }
+    @media screen and (max-width: 1200px){
+        input{
+            padding: 5px 10px;
+            width: 240px;
+        }
     }
 `

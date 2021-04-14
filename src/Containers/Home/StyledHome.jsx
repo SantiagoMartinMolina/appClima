@@ -2,12 +2,10 @@ import styled from 'styled-components'
 
 
 export const StyledHome = styled.div`
-    /* background-color: red; */
     min-height: 80vh;
     display: flex;
     justify-content: center;
-    /* align-items: flex-start; */
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 
     .welcome{
@@ -23,6 +21,10 @@ export const StyledHome = styled.div`
         border: 1px solid rgba(255, 255, 255, 0.15);
         position: absolute;
         top: 0;
+        text-align: left;
+        h1{
+            text-align: center;
+        }
     }
 
     .card-home{
@@ -30,11 +32,8 @@ export const StyledHome = styled.div`
         flex-direction: column;
 
         color: white;
-        /* padding: 0; */
         padding: 20px 45px;
-        /* margin: 280px auto; */
         max-width: 50%;
-        /* border: 5px solid black; */
         border-radius: 20px;
         background-color: rgba(0,0,0,0.3);
         backdrop-filter: blur(5px);

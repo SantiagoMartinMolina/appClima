@@ -2,6 +2,26 @@ import styled from 'styled-components'
 
 export const StyledNavbar = styled.nav`
 
+.active{
+    position: relative;
+    &::before{
+            content: '';
+            background-color: var(--color);
+            height: 5px;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            transform: scaleX(1);
+            transition: transform 0.3s ease;
+        }
+        
+        &:hover::before{
+            transform: scaleX(1);
+        }
+}
+
     color: white;
     background: rgb(124,176,135);
     background: linear-gradient(180deg, rgba(124,176,135,0.9) 0%, rgba(156,220,170,0.3) 52%, rgba(173,249,189,0) 92%);
@@ -14,7 +34,7 @@ export const StyledNavbar = styled.nav`
         align-items: center;
         justify-content: space-between;
 
-        h1{
+        /* h1{
             position: relative;
             &::before{
                 content: '';
@@ -30,7 +50,7 @@ export const StyledNavbar = styled.nav`
             &:hover::before{
                 transform: scaleX(1);
             }
-        }
+        } */
     }
     a{
         text-decoration: none;
@@ -57,23 +77,30 @@ export const StyledNavbar = styled.nav`
     }
     .links{
         font-size: 20px;
+        margin: 0 20px;
         a:first-child{
             margin-right: 20px;
         }
     }
 
-    @media screen and (max-width: 480px){
-        .nav-container{
-            flex-direction: column;
-        }   
-        .links{
-
-        }   
+    /* @media screen and (max-width: 480px){
+       .nav-container{
+       }
           
+    } */
+
+    @media screen and (max-width: 800px){
+        .nav-container{
+            width: 90%;
+            flex-direction: column;
+            h1{
+                margin-bottom: 10px;
+            }
+            .links{
+                margin-bottom: 10px;
+            }
+        } 
     }
-
-
-
-    
+ 
     
 `

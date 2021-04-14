@@ -77,6 +77,9 @@ export const StyledSearch = styled.form`
     @media screen and (max-width: 345px){
         
         flex-direction: column;
+        button{
+            margin-top: 10px;
+        }
     }
 
     @media screen and (max-width: 1200px){
